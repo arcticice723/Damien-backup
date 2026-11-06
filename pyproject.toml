@@ -1,0 +1,20 @@
+[project]
+name = "jarvis-assistant"
+version = "0.1.0"
+description = "Local Windows voice assistant powered by Ollama."
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "faster-whisper>=1.1.1",
+    "numpy>=2.1.0",
+    "Pillow>=10.4.0",
+    "piper-tts>=1.5.0",
+    "pystray>=0.19.5",
+    "pyttsx3>=2.99",
+    "pywinauto>=0.6.8; platform_system == 'Windows'",
+    "pywin32>=306; platform_system == 'Windows'",
+    "scipy>=1.14.0",
+    "sounddevice>=0.5.1",
+]
+
+[tool.unittest]
+start-dir = "tests"
